@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông tin sinh viên</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      background: #000;
+    }
+
+    .graffiti-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: radial-gradient(circle at 20% 20%, #ff005a, transparent 40%),
+                  radial-gradient(circle at 80% 30%, #00ffff, transparent 40%),
+                  radial-gradient(circle at 50% 80%, #ffea00, transparent 40%),
+                  radial-gradient(circle at 10% 90%, #00ff6a, transparent 40%),
+                  radial-gradient(circle at 90% 70%, #a100ff, transparent 40%),
+                  radial-gradient(circle at 70% 10%, #ff7f00, transparent 40%);
+      background-size: 200% 200%;
+      animation: graffitiMove 15s ease-in-out infinite alternate;
+      filter: blur(80px) brightness(1.2);
+    }
+
+    @keyframes graffitiMove {
+      0% { background-position: 0% 0%; filter: hue-rotate(0deg) blur(80px) brightness(1.2); }
+      50% { background-position: 100% 100%; filter: hue-rotate(180deg) blur(80px) brightness(1.2); }
+      100% { background-position: 0% 0%; filter: hue-rotate(360deg) blur(80px) brightness(1.2); }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      padding: 40px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+
+    .student-card {
+      background: rgba(192, 92, 130, 0.9);
+      border-radius: 15px;
+      border: 2px solid #080808;
+      width: 280px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease;
+    }
+
+    .student-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .student-card h2 {
+      color: #050505;
+      margin-bottom: 10px;
+      font-size: 20px;
+      border-bottom: 2px solid #9a4040;
+      padding-bottom: 6px;
+    }
+
+    .student-card p {
+      font-size: 16px;
+      color: #050505;
+      margin: 6px 0;
+
+    }
+
+    .student-card ul {
+      list-style-type: circle;
+      padding: 0;
+      margin-top: 10px;
+      text-align: left;
+      margin-left: 40px;
+    }
+
+    .student-card li {
+      margin: 6px 0;
+      color: #0a0a0a;
+      font-weight: 500;
+      cursor: zoom-out;
+      transition: color 0.2s;
+      
+    }
+
+    .student-card li:hover {
+      color: #a30b20;
+      text-decoration: none;
+    }
+    .student-card p strong:hover{
+      cursor: pointer;
+    }
+    .student-card h2:hover{
+      cursor: grab;
+    }
+    
+    img {
+      width: 33%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s, box-shadow 0.3s;
+      z-index: 1;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+      cursor:wait;
+    }
+  </style>
+</head>
+<body>
+  <div class="graffiti-bg"></div>
+
+  <div class="container">
+    <div class="box">
+      <div class="student-card">
+        <h2>THÔNG TIN SINH VIÊN</h2>
+        <p><strong>Đỗ Hữu Vũ</strong></p>
+        <p><em>Chuyên ngành:</em></p>
+        <ul>
+          <li>Công nghệ thông tin</li>
+          <li>Khoa học máy tính</li>
+          <li>Trí tuệ nhân tạo (AI)</li>
+        </ul>
+      </div>
+
+      <img src="https://wallpaperaccess.com/full/85246.jpg" alt="Sinh viên">
+
+      <div class="student-card">
+        <h2>THÔNG TIN SINH VIÊN</h2>
+        <p><strong>Đặng Quốc Việt</strong></p>
+        <p><em>Chuyên ngành:</em></p>
+        <ul>
+          <li>Công nghệ thông tin</li>
+          <li>Khoa học máy tính</li>
+          <li>Trí tuệ nhân tạo (AI)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="student-card">
+        <h2>THÔNG TIN SINH VIÊN</h2>
+        <p><strong>Nguyễn Minh Khang</strong></p>
+        <p><em>Chuyên ngành:</em></p>
+        <ul>
+          <li>Phát triển phần mềm</li>
+          <li>Mạng máy tính</li>
+          <li>Bảo mật hệ thống</li>
+        </ul>
+      </div>
+
+      <img src="https://wallpaperaccess.com/full/250472.jpg" alt="Sinh viên">
+
+      <div class="student-card">
+        <h2>THÔNG TIN SINH VIÊN</h2>
+        <p><strong>Nguyễn Văn Vinh</strong></p>
+        <p><em>Chuyên ngành:</em></p>
+        <ul>
+          <li>Phân tích dữ liệu</li>
+          <li>Học máy</li>
+          <li>Trí tuệ nhân tạo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

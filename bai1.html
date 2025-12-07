@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box; 
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            border: 5px solid rgb(18, 82, 50);
+            font-size: 26px;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+        }
+        .box_1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            order: 2;
+            flex-grow: 1;
+        }
+        .box_2{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            order: 1;
+            flex-grow: 3;
+        }
+        .box_3{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(10, 247, 176);
+            order: 1;
+            flex-grow: 1;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="new_box">
+    <div class="container">
+        <div class="box box_1">
+            <p>Box-1</p>
+            <P>Item 1 </P>
+        </div>
+        <div class="box box_2">
+            <p>Box-2</p>
+            <p>Item 2</p>
+        </div>
+        <div class="box box_3">
+            <p>Box-3</p>
+            <p>Item 3</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

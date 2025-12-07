@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sinh viên</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        .student-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            width: 280px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.1s ease;
+        }
+
+        .student-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .student-card h2 {
+            color: #0d47a1;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .student-card p {
+            font-size: 16px;
+            color: #333;
+            margin: 6px 0;
+        }
+
+        .student-card ul {
+            list-style-type: circle;
+            padding: 0;
+            margin-top: 10px;
+            text-align: left;
+            margin-left: 40px;
+        }
+
+        .student-card li {
+            margin: 6px 0;
+            color: #0277bd;
+            font-weight: 500;
+            cursor: pointer;
+            transition: color 0.1s;
+        }
+
+        .student-card li:hover {
+            color: #01579b;
+            text-decoration: underline;
+        }
+
+        img {
+            width: 33%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.1s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="student-card">
+            <h2>THÔNG TIN SINH VIÊN</h2>
+            <p><strong>Đỗ Hữu Vũ</strong></p>
+            <p><em>Chuyên ngành:</em></p>
+            <ul>
+                <li>Công nghệ thông tin</li>
+                <li>Khoa học máy tính</li>
+                <li>Trí tuệ nhân tạo (AI)</li>
+            </ul>
+        </div>
+
+        <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/25/e093e9cfc9027d6a142358d24d2ee350-65a11ac2af785880-17061562929701875684912.jpg" alt="Sinh viên">
+
+        <div class="student-card">
+            <h2>THÔNG TIN SINH VIÊN</h2>
+            <p><strong>Đặng Quốc Việt</strong></p>
+            <p><em>Chuyên ngành:</em></p>
+            <ul>
+                <li>Công nghệ thông tin</li>
+                <li>Khoa học máy tính</li>
+                <li>Trí tuệ nhân tạo (AI)</li>
+
+        </div>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
